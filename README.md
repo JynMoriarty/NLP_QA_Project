@@ -4,7 +4,14 @@ README
 
 # Description
 
-Etude de faisabilité d'un Projet NLP basé sur le QA (Question-Answering). Nous sommes engagés par une agence digitale et nous devons transmettre un modèle  fiable et une application permettant à l'utilisateur de pouvoir intéragir et obtenir des réponses sur un contexte donné.
+Etude de faisabilité d'un Projet NLP basé sur le QA (Question-Answering). Nous sommes engagés par une agence digitale et nous devons transmettre un modèle  fiable et une application.
+Vous retrouverez dans ce projet une application web permettant à l'utilisateur de pouvoir intéragir et obtenir des réponses sur un contexte donné
+Cette application utilise le meilleur modèle étudié parmi les 5 étudiés dans le dossier modélisation.
+
+## Pour commencer 
+
+Installez l'environnement avec pip install -requirements.txt
+
 
 ## Fabriqué avec
 
