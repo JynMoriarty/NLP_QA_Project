@@ -2,7 +2,7 @@
 
 README
 
-#Description
+# Description
 
 Etude de faisabilité d'un Projet NLP basé sur le QA (Question-Answering). Nous sommes engagés par une agence digitale et nous devons transmettre un modèle  fiable et une application permettant à l'utilisateur de pouvoir intéragir et obtenir des réponses sur un contexte donné.
 
