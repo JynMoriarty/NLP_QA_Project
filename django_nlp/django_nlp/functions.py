@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 #pip install python-dotenv
 #pip install azure-ai-language-questionanswering
 
-def get_answer(text,question):
+def get_answer(text,question,accuracy):
 
     load_dotenv()
     endpoint = "https://question-answering-test-simplon.cognitiveservices.azure.com/"
@@ -21,8 +21,12 @@ def get_answer(text,question):
 
         output = client.get_answers_from_text(input)
 
-    best_answer = [a for a in output.answers if a.confidence > 0.5]
+    best_answer = [a for a in output.answers if a.confidence > accuracy]
 
-    print(u"Q: {}".format(input.question))
-    print(u"A: {}".format(best_answer.answer))
-    print("Confidence Score: {}".format(output.answers[0].confidence))
+    
+
+    dico = {}
+    dico['reponse']= best_answer[0].answer
+    dico['score']=output.answers[0].confidence
+
+    return dico
