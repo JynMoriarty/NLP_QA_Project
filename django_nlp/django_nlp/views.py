@@ -33,7 +33,11 @@ def index(request, **kwargs):
                 'texte' : text,
             }
 
-            return render(request, "django_nlp/index.html", {'form': form})
+            return render(request, "django_nlp/result.html", data)
+        
+        else:
+
+            return render(request, "django_nlp/index.html", {'form' : form})
     
 
     else:
