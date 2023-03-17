@@ -3,6 +3,8 @@ from azure.core.credentials import AzureKeyCredential
 from azure.ai.language.questionanswering import QuestionAnsweringClient
 from azure.ai.language.questionanswering import models as qna
 from dotenv import load_dotenv
+#pip install python-dotenv
+#pip install azure-ai-language-questionanswering
 
 def get_answer(text,question):
 
