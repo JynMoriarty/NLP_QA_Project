@@ -1,21 +1,42 @@
 from django.shortcuts import render
-import requests
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
 
-def index(request):
+from .forms import UploadFileForm
+import streamlit as st
+import requests
+from PyPDF2 import PdfReader
+
+
+@csrf_exempt
+def index(request, **kwargs):
 
     if request.method == 'POST':
-        question = request.POST.get('question')
-        pdf = request.POST.get('pdf')
 
-        data = {
-            'question': question,
-            'pdf': pdf,
-        }
+        form = UploadFileForm(request.POST, request.FILES)
 
-        # headers = {"Content-Type": "application/json"}
+        if form.is_valid():
 
-        # url = "https://url-de-l'api"
+            data = form.cleaned_data
 
-        # response = requests.post(url, json=data, headers=headers)
+            question = data['question']
 
-    return render(request, "django_nlp/index.html")#, response)
+            reader = PdfReader(data['file'])
+
+            text = ''
+
+            for page in reader.pages:
+                text += page.extract_text()
+
+            data = {
+                'question' : question,
+                'texte' : text,
+            }
+
+            return render(request, "django_nlp/index.html", {'form': form})
+    
+
+    else:
+        form = UploadFileForm()
+
+        return render(request, "django_nlp/index.html", {'form' : form})

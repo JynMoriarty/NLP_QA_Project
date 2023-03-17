@@ -17,23 +17,26 @@
                     </div><br>
 
                     <div>
-                        <form method="post">
+                        <form method="post" enctype="multipart/form-data">
                             {% csrf_token %}
                             
-                            <div class="form-group">
-                                <label for="pdf">Insérez votre fichier</label><br><br>
-                                <input type="file" class="form-control" id="pdf" name="pdf" placeholder="Fichier PDF"required><br>
-                            </div><br><br>
-
-                            <div class="form-group">
+                            {% comment %} <div class="form-group">
                                 <label for="question">Quelle est votre question ?</label><br><br>
-                                <input type="text" class="form-control" id="question" name="question" placeholder="Entrer la question"required><br>
-                            </div><br><br>
+                                <input type="text" class="form-control" id="question" name="question" placeholder="Entrez la question" required><br>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <input type='file' id="pdf" class="form-control" accept="application/pdf" required>
+                            </div><br><br> {% endcomment %}
+
+                            {{ form }}
 
                             <button type="submit" class="btn btn-primary btn_send">Envoyer</button>
                         </form>
 
                     </div>
+
                 </div>
             <div>        
         </div>
