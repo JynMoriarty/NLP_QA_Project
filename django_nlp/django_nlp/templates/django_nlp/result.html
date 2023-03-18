@@ -2,32 +2,47 @@
 
 {% block content %}
 
-    <div class="container-fluid">
+<div class="container-fluid">
 
-        <div>
-            <div class="album py-5 bg-light">
+    <div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="container-fluid">
+                    <h1>Résultats</h1><br>
+                </div>
+
                 <div class="container">
-    
-                    <div class="container-fluid">
-                        <br><h1>Résultats</h1><br>
-                    </div><br>
 
-                    <div>
-                        
-                            {{ question }}
-
-                    </div>
-
-                    <div>
-                        
-                            {{ texte }}
-
-                    </div>
+                    {{ question }}
 
                 </div>
-            <div>        
+
+                <div class="container">
+
+                    {% for ligne in texte %}
+
+                    {{ ligne }}<br>
+
+                    {% endfor %}
+
+                </div>
+
+                <div class="container">
+
+                    {{ result }}
+
+                </div><br><br>
+
+                <div class="container">
+                    <a class="container" id="bouton2" href={% url 'index' %}>Retour</a>
+                </div>
+
+            </div>
+
         </div>
     </div>
+</div>
 
-    
+
 {% endblock content %}

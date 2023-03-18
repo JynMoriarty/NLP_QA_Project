@@ -9,14 +9,12 @@ from .functions import get_answer
 
 
 @csrf_exempt
-def index(request, **kwargs):
+def index(request):
 
     if request.method == 'POST':
-
         form = UploadFileForm(request.POST, request.FILES)
 
         if form.is_valid():
-
             data = form.cleaned_data
 
             question = data['question']
@@ -25,9 +23,14 @@ def index(request, **kwargs):
 
             text = ''
 
-            for page in reader.pages:
+            for i, page in enumerate(reader.pages):                
+                text += f'\n\nPage n°{i+1} :\n'
                 text += page.extract_text()
-            result = get_answer(text,question,0.5)
+
+            result = get_answer(text,question,0)
+
+            text = text.split('\n')
+
             data = {
                 'question' : question,
                 'texte' : text,

@@ -9,6 +9,6 @@ class UploadFileForm(forms.Form):
 
         super(UploadFileForm, self).__init__(*args, **kwargs)
 
-        self.fields['question'].widget.attrs.update({'placeholder':"Entrez votre question"})
+        self.fields['question'].widget.attrs.update({'class':'form-control', 'placeholder':"Entrez votre question"})
 
-        self.fields['file'].widget.attrs.update({'class':'pdf'})
+        self.fields['file'].widget.attrs.update({'class':'pdf form-control'})

@@ -1,6 +1,49 @@
+* {
+    font-size: large;
+}
+
 .pdf {
+    display: block;
     border: 2px dashed rgba(128, 128, 128, 0.5);
     padding: 20px;
     text-align: center;
     margin: 20px auto;
+    height: 200px;
+}
+
+.formulaire {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+#bouton1 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px auto 0 auto;
+    padding: 15px 25px;
+}
+
+#bouton1:hover {
+    background-color: rgb(120, 120, 120);
+}
+
+#bouton2 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 50px auto 0 auto;
+    padding: 15px 25px;
+}
+
+#bouton2:hover {
+    background-color: rgb(120, 120, 120);
 }
