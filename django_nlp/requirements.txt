@@ -1,2 +1,9 @@
 Django==3.2.12
 python-dotenv==1.0.0
+requests==2.25.1
+django-widget-tweaks
+PyPDF2
+azure-appconfiguration==1.4.0
+azure-ai-ml
+azure-ai-language-conversations
+azure-ai-language-questionanswering
