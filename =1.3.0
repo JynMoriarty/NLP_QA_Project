@@ -1,0 +1,274 @@
+Requirement already satisfied: pdfrw in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (0.4)
+Requirement already satisfied: install in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (1.3.5)
+Collecting farm-haystack
+  Downloading farm_haystack-1.14.0-py3-none-any.whl (640 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 640.4/640.4 kB 6.9 MB/s eta 0:00:00
+Requirement already satisfied: pinecone-client in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (2.2.1)
+Requirement already satisfied: datasets in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (2.10.1)
+Collecting more-itertools
+  Downloading more_itertools-9.1.0-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.2/54.2 kB 5.7 MB/s eta 0:00:00
+Requirement already satisfied: tika in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (2.6.0)
+Collecting rank-bm25
+  Downloading rank_bm25-0.2.2-py3-none-any.whl (8.6 kB)
+Requirement already satisfied: pandas in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (1.5.3)
+Collecting rapidfuzz<2.8.0,>=2.0.15
+  Downloading rapidfuzz-2.7.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 10.1 MB/s eta 0:00:00
+Collecting quantulum3
+  Downloading quantulum3-0.8.1-py3-none-any.whl (10.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.7/10.7 MB 11.0 MB/s eta 0:00:00
+Requirement already satisfied: requests in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (2.28.2)
+Requirement already satisfied: networkx in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (3.0)
+Collecting transformers[torch]==4.25.1
+  Downloading transformers-4.25.1-py3-none-any.whl (5.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.8/5.8 MB 11.0 MB/s eta 0:00:00
+Collecting tenacity
+  Downloading tenacity-8.2.2-py3-none-any.whl (24 kB)
+Collecting posthog
+  Downloading posthog-2.4.0-py2.py3-none-any.whl (36 kB)
+Collecting elasticsearch<8,>=7.7
+  Downloading elasticsearch-7.17.9-py2.py3-none-any.whl (385 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.0/386.0 kB 10.0 MB/s eta 0:00:00
+Collecting langdetect
+  Downloading langdetect-1.0.9.tar.gz (981 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 981.5/981.5 kB 10.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: nltk in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (3.8.1)
+Collecting seqeval
+  Downloading seqeval-1.2.2.tar.gz (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 kB 3.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: dill in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (0.3.6)
+Requirement already satisfied: sentence-transformers>=2.2.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (2.2.2)
+Requirement already satisfied: scikit-learn>=1.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (1.2.2)
+Collecting pydantic
+  Downloading pydantic-1.10.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 11.0 MB/s eta 0:00:00
+Requirement already satisfied: scipy>=1.3.2 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (1.10.1)
+Requirement already satisfied: tqdm in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (4.65.0)
+Collecting mmh3
+  Downloading mmh3-3.0.0.tar.gz (10 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting protobuf<=3.20.2
+  Downloading protobuf-3.20.2-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 9.5 MB/s eta 0:00:00
+Requirement already satisfied: huggingface-hub>=0.5.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from farm-haystack) (0.13.3)
+Collecting mlflow
+  Downloading mlflow-2.2.2-py3-none-any.whl (17.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.6/17.6 MB 10.7 MB/s eta 0:00:00
+Collecting tiktoken>=0.1.2
+  Downloading tiktoken-0.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 10.9 MB/s eta 0:00:00
+Collecting python-docx
+  Downloading python-docx-0.8.11.tar.gz (5.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 11.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting azure-ai-formrecognizer>=3.2.0b2
+  Downloading azure_ai_formrecognizer-3.2.1-py3-none-any.whl (228 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.6/228.6 kB 7.9 MB/s eta 0:00:00
+Collecting jsonschema
+  Downloading jsonschema-4.17.3-py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.4/90.4 kB 7.5 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=5.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (6.0)
+Requirement already satisfied: regex!=2019.12.17 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (2022.10.31)
+Requirement already satisfied: packaging>=20.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (23.0)
+Requirement already satisfied: numpy>=1.17 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (1.24.2)
+Requirement already satisfied: filelock in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (3.10.0)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (0.13.2)
+Requirement already satisfied: torch!=1.12.0,>=1.7 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from transformers[torch]==4.25.1->farm-haystack) (2.0.0)
+Requirement already satisfied: loguru>=0.5.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from pinecone-client) (0.6.0)
+Requirement already satisfied: typing-extensions>=3.7.4 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from pinecone-client) (4.5.0)
+Requirement already satisfied: urllib3>=1.21.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from pinecone-client) (1.26.15)
+Requirement already satisfied: python-dateutil>=2.5.3 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from pinecone-client) (2.8.2)
+Requirement already satisfied: dnspython>=2.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from pinecone-client) (2.3.0)
+Requirement already satisfied: multiprocess in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (0.70.14)
+Requirement already satisfied: aiohttp in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (3.8.4)
+Requirement already satisfied: fsspec[http]>=2021.11.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (2023.3.0)
+Requirement already satisfied: responses<0.19 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (0.18.0)
+Requirement already satisfied: xxhash in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (3.2.0)
+Requirement already satisfied: pyarrow>=6.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from datasets) (11.0.0)
+Requirement already satisfied: azure-core<2.0.0,>=1.23.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from azure-ai-formrecognizer>=3.2.0b2->farm-haystack) (1.26.3)
+Collecting msrest>=0.6.21
+  Downloading msrest-0.7.1-py3-none-any.whl (85 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.4/85.4 kB 7.6 MB/s eta 0:00:00
+Collecting azure-common~=1.1
+  Downloading azure_common-1.1.28-py2.py3-none-any.whl (14 kB)
+Requirement already satisfied: certifi in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from elasticsearch<8,>=7.7->farm-haystack) (2022.12.7)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (1.3.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (1.8.2)
+Requirement already satisfied: attrs>=17.3.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (22.2.0)
+Requirement already satisfied: charset-normalizer<4.0,>=2.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (3.1.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from aiohttp->datasets) (1.3.3)
+Requirement already satisfied: six>=1.5 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from python-dateutil>=2.5.3->pinecone-client) (1.16.0)
+Collecting jarowinkler<2.0.0,>=1.2.0
+  Downloading jarowinkler-1.2.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.2/114.2 kB 7.8 MB/s eta 0:00:00
+Requirement already satisfied: idna<4,>=2.5 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from requests->farm-haystack) (3.4)
+Requirement already satisfied: joblib>=1.1.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from scikit-learn>=1.0.0->farm-haystack) (1.2.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from scikit-learn>=1.0.0->farm-haystack) (3.1.0)
+Requirement already satisfied: sentencepiece in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from sentence-transformers>=2.2.0->farm-haystack) (0.1.97)
+Requirement already satisfied: torchvision in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from sentence-transformers>=2.2.0->farm-haystack) (0.15.1)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.19.3-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.5/57.5 kB 5.3 MB/s eta 0:00:00
+Collecting cloudpickle<3
+  Using cached cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Collecting matplotlib<4
+  Downloading matplotlib-3.7.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 11.0 MB/s eta 0:00:00
+Requirement already satisfied: Jinja2<4,>=2.11 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from mlflow->farm-haystack) (3.1.2)
+Collecting alembic<2
+  Downloading alembic-1.10.2-py3-none-any.whl (212 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 212.2/212.2 kB 9.2 MB/s eta 0:00:00
+Collecting databricks-cli<1,>=0.8.7
+  Downloading databricks-cli-0.17.6.tar.gz (82 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.7/82.7 kB 7.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting Flask<3
+  Downloading Flask-2.2.3-py3-none-any.whl (101 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.8/101.8 kB 8.0 MB/s eta 0:00:00
+Collecting sqlalchemy<3,>=1.4.0
+  Downloading SQLAlchemy-2.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 10.9 MB/s eta 0:00:00
+Collecting gunicorn<21
+  Using cached gunicorn-20.1.0-py3-none-any.whl (79 kB)
+Collecting shap<1,>=0.40
+  Using cached shap-0.41.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (572 kB)
+Requirement already satisfied: pytz<2023 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from mlflow->farm-haystack) (2022.7.1)
+Requirement already satisfied: click<9,>=7.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from mlflow->farm-haystack) (8.1.3)
+Collecting gitpython<4,>=2.1.0
+  Downloading GitPython-3.1.31-py3-none-any.whl (184 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.3/184.3 kB 8.8 MB/s eta 0:00:00
+Collecting importlib-metadata!=4.7.0,<7,>=3.7.0
+  Downloading importlib_metadata-6.1.0-py3-none-any.whl (21 kB)
+Collecting querystring-parser<2
+  Using cached querystring_parser-1.2.4-py2.py3-none-any.whl (7.9 kB)
+Collecting markdown<4,>=3.3
+  Using cached Markdown-3.4.1-py3-none-any.whl (93 kB)
+Collecting entrypoints<1
+  Using cached entrypoints-0.4-py3-none-any.whl (5.3 kB)
+Requirement already satisfied: sqlparse<1,>=0.4.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from mlflow->farm-haystack) (0.4.3)
+Requirement already satisfied: docker<7,>=4.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from mlflow->farm-haystack) (6.0.1)
+Collecting backoff>=1.10.0
+  Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Collecting monotonic>=1.5
+  Downloading monotonic-1.6-py2.py3-none-any.whl (8.2 kB)
+Collecting lxml>=2.3.2
+  Downloading lxml-4.9.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (7.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 11.1 MB/s eta 0:00:00
+Collecting inflect
+  Downloading inflect-6.0.2-py3-none-any.whl (34 kB)
+Collecting num2words
+  Downloading num2words-0.5.12-py3-none-any.whl (125 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.2/125.2 kB 8.0 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from tika->farm-haystack) (67.6.0)
+Collecting Mako
+  Using cached Mako-1.2.4-py3-none-any.whl (78 kB)
+Collecting pyjwt>=1.7.0
+  Using cached PyJWT-2.6.0-py3-none-any.whl (20 kB)
+Collecting oauthlib>=3.1.0
+  Using cached oauthlib-3.2.2-py3-none-any.whl (151 kB)
+Collecting tabulate>=0.7.7
+  Using cached tabulate-0.9.0-py3-none-any.whl (35 kB)
+Requirement already satisfied: websocket-client>=0.32.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from docker<7,>=4.0.0->mlflow->farm-haystack) (1.5.1)
+Collecting itsdangerous>=2.0
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting Werkzeug>=2.2.2
+  Downloading Werkzeug-2.2.3-py3-none-any.whl (233 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 233.6/233.6 kB 9.4 MB/s eta 0:00:00
+Collecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 6.4 MB/s eta 0:00:00
+Collecting zipp>=0.5
+  Downloading zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from Jinja2<4,>=2.11->mlflow->farm-haystack) (2.1.2)
+Collecting cycler>=0.10
+  Downloading cycler-0.11.0-py3-none-any.whl (6.4 kB)
+Collecting kiwisolver>=1.0.1
+  Downloading kiwisolver-1.4.4-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 10.4 MB/s eta 0:00:00
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.39.2-py3-none-any.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 9.9 MB/s eta 0:00:00
+Requirement already satisfied: pillow>=6.2.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from matplotlib<4->mlflow->farm-haystack) (9.4.0)
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (300 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 300.3/300.3 kB 10.5 MB/s eta 0:00:00
+Collecting pyparsing>=2.3.1
+  Downloading pyparsing-3.0.9-py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.3/98.3 kB 7.9 MB/s eta 0:00:00
+Collecting requests-oauthlib>=0.5.0
+  Using cached requests_oauthlib-1.3.1-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: isodate>=0.6.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from msrest>=0.6.21->azure-ai-formrecognizer>=3.2.0b2->farm-haystack) (0.6.1)
+Collecting numba
+  Using cached numba-0.56.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+Collecting slicer==0.0.7
+  Using cached slicer-0.0.7-py3-none-any.whl (14 kB)
+Collecting greenlet!=0.4.17
+  Using cached greenlet-2.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (613 kB)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.4.91 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.7.4.91)
+Requirement already satisfied: nvidia-curand-cu11==10.2.10.91 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (10.2.10.91)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.0.1 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.4.0.1)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.10.3.66)
+Requirement already satisfied: sympy in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (1.11.1)
+Requirement already satisfied: nvidia-nvtx-cu11==11.7.91 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.7.91)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.7.99)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.7.101 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.7.101)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (8.5.0.96)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (10.9.0.58)
+Requirement already satisfied: nvidia-nccl-cu11==2.14.3 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (2.14.3)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (11.7.99)
+Requirement already satisfied: triton==2.0.0 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (2.0.0)
+Requirement already satisfied: wheel in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (0.38.4)
+Requirement already satisfied: cmake in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from triton==2.0.0->torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (3.26.0)
+Requirement already satisfied: lit in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from triton==2.0.0->torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (16.0.0)
+Collecting docopt>=0.6.2
+  Using cached docopt-0.6.2-py2.py3-none-any.whl
+Collecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Collecting numpy>=1.17
+  Downloading numpy-1.23.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.1/17.1 MB 10.9 MB/s eta 0:00:00
+Collecting llvmlite<0.40,>=0.39.0dev0
+  Using cached llvmlite-0.39.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.6 MB)
+Requirement already satisfied: mpmath>=0.19 in /home/apprenant/.local/share/virtualenvs/NLP_QA_Project-_BgixJ9r/lib/python3.10/site-packages (from sympy->torch!=1.12.0,>=1.7->transformers[torch]==4.25.1->farm-haystack) (1.3.0)
+Building wheels for collected packages: langdetect, mmh3, python-docx, seqeval, databricks-cli
+  Building wheel for langdetect (setup.py): started
+  Building wheel for langdetect (setup.py): finished with status 'done'
+  Created wheel for langdetect: filename=langdetect-1.0.9-py3-none-any.whl size=993225 sha256=7351f20e2c7c97ee79c8ef5748ee20b008e2e025de6688a5ad214edd392ade32
+  Stored in directory: /home/apprenant/.cache/pip/wheels/95/03/7d/59ea870c70ce4e5a370638b5462a7711ab78fba2f655d05106
+  Building wheel for mmh3 (setup.py): started
+  Building wheel for mmh3 (setup.py): finished with status 'done'
+  Created wheel for mmh3: filename=mmh3-3.0.0-cp310-cp310-linux_x86_64.whl size=33049 sha256=6731ff5093b282433389b075c319dff585f31fb2ecde46fd9ec4b14e63329c06
+  Stored in directory: /home/apprenant/.cache/pip/wheels/01/5e/f4/ea9f16c5ab10dc5596f497b829ec654c7e48f4f5d1a5c4c97a
+  Building wheel for python-docx (setup.py): started
+  Building wheel for python-docx (setup.py): finished with status 'done'
+  Created wheel for python-docx: filename=python_docx-0.8.11-py3-none-any.whl size=184490 sha256=33fa57004832c8818047707f96f6dd58fa8d633fdd280816c1d92fe3b69fa072
+  Stored in directory: /home/apprenant/.cache/pip/wheels/80/27/06/837436d4c3bd989b957a91679966f207bfd71d358d63a8194d
+  Building wheel for seqeval (setup.py): started
+  Building wheel for seqeval (setup.py): finished with status 'done'
+  Created wheel for seqeval: filename=seqeval-1.2.2-py3-none-any.whl size=16164 sha256=3bb894ea489d504fdc38db9c673c75709a3896cd7c7888ec92e9218b2f5d8baa
+  Stored in directory: /home/apprenant/.cache/pip/wheels/1a/67/4a/ad4082dd7dfc30f2abfe4d80a2ed5926a506eb8a972b4767fa
+  Building wheel for databricks-cli (setup.py): started
+  Building wheel for databricks-cli (setup.py): finished with status 'done'
+  Created wheel for databricks-cli: filename=databricks_cli-0.17.6-py3-none-any.whl size=143222 sha256=64d2d412b2e60bc4c450913f3de1113d1898fb57a9f1b3a057ce223e713e9306
+  Stored in directory: /home/apprenant/.cache/pip/wheels/7b/85/a1/37b9b24f55c1da8ea4795765de41713b8a2cccad89c866e26b
+Successfully built langdetect mmh3 python-docx seqeval databricks-cli
+Installing collected packages: monotonic, mmh3, docopt, azure-common, zipp, Werkzeug, tenacity, tabulate, smmap, slicer, querystring-parser, pyrsistent, pyparsing, pyjwt, pydantic, protobuf, oauthlib, numpy, num2words, more-itertools, markdown, Mako, lxml, llvmlite, langdetect, kiwisolver, jarowinkler, itsdangerous, gunicorn, greenlet, fonttools, entrypoints, elasticsearch, cycler, cloudpickle, backoff, tiktoken, sqlalchemy, requests-oauthlib, rapidfuzz, rank-bm25, python-docx, posthog, numba, jsonschema, inflect, importlib-metadata, gitdb, Flask, databricks-cli, contourpy, transformers, quantulum3, msrest, matplotlib, gitpython, alembic, shap, seqeval, azure-ai-formrecognizer, mlflow, farm-haystack
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.24.2
+    Uninstalling numpy-1.24.2:
+      Successfully uninstalled numpy-1.24.2
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.27.2
+    Uninstalling transformers-4.27.2:
+      Successfully uninstalled transformers-4.27.2
+Successfully installed Flask-2.2.3 Mako-1.2.4 Werkzeug-2.2.3 alembic-1.10.2 azure-ai-formrecognizer-3.2.1 azure-common-1.1.28 backoff-2.2.1 cloudpickle-2.2.1 contourpy-1.0.7 cycler-0.11.0 databricks-cli-0.17.6 docopt-0.6.2 elasticsearch-7.17.9 entrypoints-0.4 farm-haystack-1.14.0 fonttools-4.39.2 gitdb-4.0.10 gitpython-3.1.31 greenlet-2.0.2 gunicorn-20.1.0 importlib-metadata-6.1.0 inflect-6.0.2 itsdangerous-2.1.2 jarowinkler-1.2.3 jsonschema-4.17.3 kiwisolver-1.4.4 langdetect-1.0.9 llvmlite-0.39.1 lxml-4.9.2 markdown-3.4.1 matplotlib-3.7.1 mlflow-2.2.2 mmh3-3.0.0 monotonic-1.6 more-itertools-9.1.0 msrest-0.7.1 num2words-0.5.12 numba-0.56.4 numpy-1.23.5 oauthlib-3.2.2 posthog-2.4.0 protobuf-3.20.2 pydantic-1.10.6 pyjwt-2.6.0 pyparsing-3.0.9 pyrsistent-0.19.3 python-docx-0.8.11 quantulum3-0.8.1 querystring-parser-1.2.4 rank-bm25-0.2.2 rapidfuzz-2.7.0 requests-oauthlib-1.3.1 seqeval-1.2.2 shap-0.41.0 slicer-0.0.7 smmap-5.0.0 sqlalchemy-2.0.7 tabulate-0.9.0 tenacity-8.2.2 tiktoken-0.3.2 transformers-4.25.1 zipp-3.15.0

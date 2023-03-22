@@ -3,6 +3,8 @@ FROM python:3.10-slim-buster
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1
+ENV SECRET_KEY=${SECRET_KEY}
+ENV credential=${credential}
 
 COPY requirements.txt .
 
@@ -12,6 +14,6 @@ RUN pip install --upgrade pip && \
 
 COPY . /app
 
-EXPOSE 8000
+EXPOSE 8007
 
 CMD ["python" ,"manage.py","runserver","0.0.0.0:80"]
