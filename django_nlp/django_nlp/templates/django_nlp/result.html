@@ -19,18 +19,25 @@
                 </div>
 
                 <div class="container">
-
-                    {% for ligne in texte %}
-
-                    {{ ligne }}<br>
+                    {% for page in  texte %}
+                    {{page}}
 
                     {% endfor %}
 
-                </div>
+                    
 
+                </div>
+                <br><br><br><br>
                 <div class="container">
 
                     {{ result }}
+                    <br><br>
+                    {{score}}
+                    <br><br>
+                    {% for result in resultat  %}
+                        {{result}}
+
+                    {% endfor %}
 
                 </div><br><br>
 

@@ -5,8 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .forms import UploadFileForm
 import requests
 from PyPDF2 import PdfReader
-from .functions import get_answer
-
+from .functions import *
 
 @csrf_exempt
 def index(request):
@@ -18,22 +17,22 @@ def index(request):
             data = form.cleaned_data
 
             question = data['question']
-
+        
             reader = PdfReader(data['file'])
 
-            text = ''
+            clean_data = get_cleantext_and_lists('doc_test',reader) # Retourne un dictionnaire contenant le texte clean et deux listes pour le df de pinecone
+            result = get_answer(clean_data['texte'],question,0)
 
-            for i, page in enumerate(reader.pages):                
-                text += f'\n\nPage n°{i+1} :\n'
-                text += page.extract_text()
 
-            result = get_answer(text,question,0)
-
-            text = text.split('\n')
+          
+            
+            
+            score = result['score']
 
             data = {
                 'question' : question,
-                'texte' : text,
+                'score':score,
+                'texte' : clean_data['contexte'],
                 'result': result
             }
 
