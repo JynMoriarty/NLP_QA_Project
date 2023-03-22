@@ -11,29 +11,32 @@ from .functions import *
 def index(request):
 
     if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
+        form = UploadFileForm(request.POST, request.FILES,request.POST)
 
         if form.is_valid():
             data = form.cleaned_data
 
             question = data['question']
-        
+            language = data['language']
             reader = PdfReader(data['file'])
 
             clean_data = get_cleantext_and_lists('doc_test',reader) # Retourne un dictionnaire contenant le texte clean et deux listes pour le df de pinecone
-            result = get_answer(clean_data['texte'],question,0)
+            result = get_answer(clean_data['texte'],question,0) #answer
 
 
-          
+            pipe = save_document(clean_data['document'])
+            resultat =  extract_answer(pipe,question)
+
             
+
             
-            score = result['score']
 
             data = {
                 'question' : question,
-                'score':score,
                 'texte' : clean_data['contexte'],
-                'result': result
+                'result': 'Réponse de ACS : ' + str(result['reponse']) + '     '+'score : ' + str(result['score']),
+                'resultat' : ' Réponse de Haystack : ' + str(resultat.answer) + '      ' + 'score : '+str(resultat.score),
+                'language': language
             }
 
             return render(request, "django_nlp/result.html", data)

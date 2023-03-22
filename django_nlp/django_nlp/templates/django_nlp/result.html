@@ -15,12 +15,13 @@
                 <div class="container">
 
                     {{ question }}
-
+                    <br>
+                    {{language}}
+                    
                 </div>
-
                 <div class="container">
                     {% for page in  texte %}
-                    {{page}}
+                        {{page}}
 
                     {% endfor %}
 
@@ -32,14 +33,10 @@
 
                     {{ result }}
                     <br><br>
-                    {{score}}
                     <br><br>
-                    {% for result in resultat  %}
-                        {{result}}
+                    {{resultat}}
 
-                    {% endfor %}
-
-                </div><br><br>
+                </div>
 
                 <div class="container">
                     <a class="container" id="bouton2" href={% url 'index' %}>Retour</a>
