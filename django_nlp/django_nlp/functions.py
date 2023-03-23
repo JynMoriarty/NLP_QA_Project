@@ -62,12 +62,12 @@ def get_cleantext_and_lists(title,reader):
         n =page.extract_text()
         text += n
         
-    clean_text = text.replace(" ","").replace('●', '').replace("\n"," ") # pour azure
+    clean_text = text.replace('●', '').replace("\n"," ") # pour azure
 
     text= text.split('\n')
 
     for i in range(1,len(text)):
-        text[i]=text[i].replace(" ","").replace('●', '').replace("\n"," ")
+        text[i]=text[i].replace('●', '').replace("\n"," ")
         context_list.append(text[i])
         title_list.append('test')
 
@@ -95,7 +95,7 @@ def get_cleantext_and_lists(title,reader):
 from haystack.nodes import PDFToTextConverter
 
 
-def save_document(all_docs):
+def save_document(all_docs,model):
 
     document_store = InMemoryDocumentStore(use_bm25=True)
     preprocessor = PreProcessor(
@@ -111,7 +111,7 @@ def save_document(all_docs):
 
     retriever = BM25Retriever(document_store=document_store)
 
-    reader = FARMReader(model_name_or_path='etalab-ia/camembert-base-squadFR-fquad-piaf', use_gpu=True)
+    reader = FARMReader(model_name_or_path=model, use_gpu=True)
 
     pipe = ExtractiveQAPipeline(reader, retriever)
     

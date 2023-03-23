@@ -16,14 +16,17 @@
 
                     {{ question }}
                     <br>
-                    {{language}}
                     
                 </div>
-                <div class="container">
+                <br>
+                <div class="container " style="overflow-y: scroll; height:400px; border: 1px solid #000; padding:15px;">
                     {% for page in  texte %}
+
                         {{page}}
+                        <br>
 
                     {% endfor %}
+                 
 
                     
 
@@ -32,9 +35,13 @@
                 <div class="container">
 
                     {{ result }}
+                    <br>
+                    {{result_score}}
                     <br><br>
                     <br><br>
-                    {{resultat}}
+                    {{resultat_reponse}}
+                    <br>
+                    {{resultat_score}}
 
                 </div>
 
