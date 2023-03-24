@@ -1,15 +1,17 @@
-FROM python:3.10-slim-buster
+FROM python:3.9.15
 
 WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1
-ENV SECRET_KEY=${SECRET_KEY}
-ENV credential=${credential}
+
 
 COPY requirements.txt .
 
 RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
+    pip install -r requirements.txt && \
+    apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install gcc
 
 
 COPY . /app
