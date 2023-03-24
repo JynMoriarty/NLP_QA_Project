@@ -111,9 +111,10 @@ def save_document(all_docs,model):
 
     retriever = BM25Retriever(document_store=document_store)
 
-    reader = FARMReader(model_name_or_path=model, use_gpu=True)
+    reader_local = FARMReader(model_name_or_path=model)
+    # reader = FARMReader(model_name_or_path=model, use_gpu=True)
 
-    pipe = ExtractiveQAPipeline(reader, retriever)
+    pipe = ExtractiveQAPipeline(reader_local, retriever)
     
     return pipe
 

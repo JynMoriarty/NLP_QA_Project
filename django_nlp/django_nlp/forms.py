@@ -2,8 +2,8 @@ from django import forms
 
 class UploadFileForm(forms.Form):
     CHOICES = [
-        ('etalab-ia/camembert-base-squadFR-fquad-piaf','FR'),
-        ( 'deepset/roberta-base-squad2','ENG'),
+        ('../modelisation/api/data/model_fr/','FR'),
+        ('../modelisation/api/data/model_en/','ENG'),
     ]
     
     
