@@ -24,7 +24,7 @@ def index(request):
             result = get_answer(clean_data['texte'],question,0) #answer
 
 
-            pipe = save_document(clean_data['document'])
+            pipe = save_document(clean_data['document'],data['language'])
             resultat =  extract_answer(pipe,question)
 
             
@@ -34,8 +34,10 @@ def index(request):
             data = {
                 'question' : question,
                 'texte' : clean_data['contexte'],
-                'result': 'Réponse de ACS : ' + str(result['reponse']) + '     '+'score : ' + str(result['score']),
-                'resultat' : ' Réponse de Haystack : ' + str(resultat.answer) + '      ' + 'score : '+str(resultat.score),
+                'result': f"Réponse de ACS : {str(result['reponse'])}",
+                'result_score' : f"Score : {str(result['score'])}",
+                'resultat_reponse' : f"Réponse de Haystack : {str(resultat.answer)}",
+                'resultat_score' : f"Score : {str(resultat.score)}",
                 'language': language
             }
 
